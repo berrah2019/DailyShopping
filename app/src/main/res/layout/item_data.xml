@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="7dp"
+    app:cardElevation="6dp"
+    android:elevation="6dp"
+    android:layout_height="wrap_content">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:padding="10dp"
+
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      >
+  <RelativeLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1">
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textAppearance="@style/TextAppearance.AppCompat.Small"
+          android:text="29 Mai 2020"
+          android:padding="5dp"
+          android:id="@+id/date"
+          android:textColor="#388E3C"
+
+          />
+  </RelativeLayout>
+      <RelativeLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="2">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+              android:text="Title"
+              android:padding="5dp"
+              android:id="@+id/type"
+              android:textColor="#FF9800"
+
+              />
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textAppearance="@style/TextAppearance.AppCompat.Small"
+              android:maxLines="1"
+              android:layout_below="@+id/type"
+              android:text="Note"
+              android:padding="5dp"
+              android:id="@+id/note"
+              android:textColor="#2144F3"
+
+              />
+      </RelativeLayout>
+      <RelativeLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textAppearance="@style/TextAppearance.AppCompat.Small"
+              android:text="999999"
+              android:padding="5dp"
+              android:id="@+id/amount"
+              android:textColor="#673AB7"
+
+              />
+      </RelativeLayout>
+  </LinearLayout>
+</androidx.cardview.widget.CardView>
